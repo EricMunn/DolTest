@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5</TargetFramework>
+    <AssemblyName>DolTest</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>DolTest</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.*" />
+    <PackageReference Include="ServiceStack" Version="5.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DolTest.ServiceInterface\DolTest.ServiceInterface.csproj" />
+    <ProjectReference Include="..\DolTest.ServiceModel\DolTest.ServiceModel.csproj" />
+  </ItemGroup>
+
+</Project>
